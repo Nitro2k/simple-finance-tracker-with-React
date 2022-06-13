@@ -27,6 +27,9 @@ function App() {
               {user && <Redirect to="/" />}
               {!user && <Signup />}
             </Route>
+            <Route path="*">
+              <Redirect to="/" />
+            </Route>
           </Switch>
         </BrowserRouter>
       )}
